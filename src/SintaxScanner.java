@@ -9,7 +9,7 @@
 * @description SintaxScanner. Encargada de evaluar y devolver un entero dependiendo de la expresion que se le envie
 * @date creación 27/01/2024 última modificación 06/02/2024
 */
-package proyecto1;
+package src;
 import java.util.regex.Pattern;
 import java.util.regex.Matcher;
 

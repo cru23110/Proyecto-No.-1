@@ -10,7 +10,7 @@
 * @date creación 26/01/2024 última modificación 05/02/2024
 */
 
-package proyecto1;
+package src;
 import java.util.ArrayList;
 public class StackArrayList<T> implements ICustomStack<T>
 {
