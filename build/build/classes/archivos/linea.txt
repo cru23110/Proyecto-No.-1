@@ -1,0 +1,56 @@
+(setq x 20)
+(setq y 10)
+(setq z 5)
+(setq lista1 '(1 2 3))
+(setq lista2 '(5 6 7))
+
+(atom x)               ; => nil
+(atom 199)             ; => t
+(atom lista1)          ; => nil
+(list x y z)           ; => (20 10 5)
+(list 11 12 13)        ; => (11 12 13)
+(listp lista2)         ; => t
+(listp y)              ; => nil
+(listp '(5 4 2))       ; => t
+(equal x y)            ; => nil
+(equal x 20)           ; => t
+(equal z y)            ; => nil
+(equal z 5)            ; => t
+(+ x y z)              ; => 35
+(- x y z)              ; => 5
+(* x y z)              ; => 1000
+(/ x y)                ; => 2
+(= x y)                ; => nil
+(= x 20)               ; => t
+(> 10 9 8 7 6 1)       ; => t
+(> x 10 y 9 8 7 6 z 1) ; => t
+(> 10 x 9 8 7 6 1)     ; => nil
+(< 1 2 3 4 5)          ; => t
+(< 1 2 3 4 z 8 y 15 x) ; => t
+(quote (Hola))         ; => (Hola)
+
+(setq x 1)
+(cond
+    ((= x 1) (print "El numero evaluado es 1"))
+    ((= x 5) (print "El numero evaluado es 5"))
+    ((= x 7) (print "El numero evaluado es 7")))
+
+(defun fibonacci (n) 
+    (cond 
+        ((= n 0) 0) 
+        ((= n 1) 1) 
+        (t (+ (fibonacci (- n 1)) (fibonacci (- n 2))))))
+
+(defun factorial (n) 
+    (cond 
+        ((= n 0) 1) 
+        (t (* n (factorial (- n 1))))))
+
+(print (fibonacci 10))
+(print (factorial 5)))
+
+; Conversión de grados Celsius a Fahrenheit
+(defun celsius-to-fahrenheit (celsius)
+    (* 9/5 celsius (+ -32)))
+
+(print (celsius-to-fahrenheit 20))
