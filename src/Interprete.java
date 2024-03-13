@@ -10,7 +10,7 @@
 * @date creación 23/01/2024 última modificación 06/02/2024
 */
 
-package proyecto1;
+// package proyecto1;
 
 import java.util.ArrayList;
 import java.util.HashMap;
